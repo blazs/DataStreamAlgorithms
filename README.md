@@ -15,7 +15,7 @@ We offer four variants of these algorithms:
 ## How do I use it?
 The algorithms are very easy to use. For example:
 ```java
-Calculator<String> entropyCalculator = new SlidingEntropyCalculator(100);
+Calculator<String> entropyCalculator = new SlidingEntropyCalculator<>(100);
 for (StreamElement<String> element : elements) {
   entropyCalculator.process(element);
 }
