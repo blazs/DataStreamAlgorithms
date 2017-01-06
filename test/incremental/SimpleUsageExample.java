@@ -4,7 +4,7 @@ import incremental.util.StringClassGenerator;
 import incremental.damping.*;
 import incremental.sliding.*;
 
-public class SImpleUsageExample {
+public class SimpleUsageExample {
 	public static void main(String[] args) {
 		final int numClasses = 4;
 		final int numValues = 10000;
