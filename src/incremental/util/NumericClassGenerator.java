@@ -1,5 +1,7 @@
 package incremental.util;
 
+import java.util.stream.IntStream;
+
 import incremental.StreamElement;
 
 /**
@@ -30,10 +32,7 @@ public class NumericClassGenerator extends ClassGenerator<Integer> {
 
 	@Override
 	public Integer[] getPossibleValues(){
-		Integer[] values = new Integer[numClasses];
-		for (int l = 0; l < numClasses; l++) {
-			values[l] = Integer.valueOf(l);
-		}
-		return values;
+		return IntStream.range(0, numClasses).boxed()
+				.toArray(Integer[]::new);
 	}
 }

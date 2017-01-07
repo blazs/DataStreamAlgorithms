@@ -1,6 +1,7 @@
 package incremental.util;
 
 import java.lang.Math;
+import java.util.stream.IntStream;
 
 import incremental.StreamElement;
 
@@ -34,10 +35,8 @@ public class StringClassGenerator extends ClassGenerator<String> {
 
 	@Override
 	public String[] getPossibleValues(){
-		String values[] = new String[numClasses];
-		for(int i = 0; i < numClasses; i++){
-			values[i] = "class" + i;
-		}
-		return values;
+		return IntStream.range(0, numClasses).boxed()
+				.map(i -> "class" + i)
+				.toArray(String[]::new);
 	}
 }
