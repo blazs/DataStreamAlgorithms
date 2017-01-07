@@ -1,8 +1,10 @@
 package incremental;
 
+import incremental.damping.DampingEntropyCalculator;
+import incremental.damping.DampingGiniCalculator;
+import incremental.sliding.SlidingEntropyCalculator;
+import incremental.sliding.SlidingGiniCalculator;
 import incremental.util.StringClassGenerator;
-import incremental.damping.*;
-import incremental.sliding.*;
 
 public class SimpleUsageExample {
 	public static void main(String[] args) {
