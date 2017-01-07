@@ -15,7 +15,8 @@ We offer four variants of these algorithms:
 ## How do I use it?
 The algorithms are very easy to use. For example:
 ```java
-Calculator<String> entropyCalculator = new SlidingEntropyCalculator<>(100);
+final int windowSize = 100;
+Calculator<String> entropyCalculator = new SlidingEntropyCalculator<>(windowSize);
 for (StreamElement<String> element : elements) {
   entropyCalculator.process(element);
 }
@@ -29,4 +30,4 @@ See `incremental.SimpleUsageExample` for how to use the calculators.
 [1] Blaz Sovdat. [Updating Formulas and Algorithms for Computing Entropy and Gini Index from Time-Changing Data Streams](https://arxiv.org/abs/1403.6348), arXiv:1403.6348.
 
 ## Contact
-For any questions regarding the code or the paper, contact [Blaz Sovdat](https://github.com/blazs) or Jean Paul Barddal (jpbarddal@gmail.com).
+For any questions regarding the code or the paper, contact [Blaz Sovdat](https://github.com/blazs) (blaz.sovdat@gmail.com) or Jean Paul Barddal (jpbarddal@gmail.com).
