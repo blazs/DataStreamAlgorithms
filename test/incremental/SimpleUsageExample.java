@@ -6,10 +6,22 @@ import incremental.sliding.SlidingEntropyCalculator;
 import incremental.sliding.SlidingGiniCalculator;
 import incremental.util.StringClassGenerator;
 
+/**
+ * A simple demonstration of how to use the calculators. Recall that the entropy
+ * of a 4-valued uniform random variable is log_2 4 = 2.0, and that its Gini
+ * index is 1-1/4 = 3/4 = 0.75.
+ * 
+ * In general, the entropy of a uniform n-valued discrete random variable is
+ * log_2 n, and the Gini index of this variable is 1-1/n.
+ * 
+ * @author blazs
+ *
+ */
 public class SimpleUsageExample {
 	public static void main(String[] args) {
 		final int numClasses = 4;
 		final int numValues = 10000;
+
 		StringClassGenerator generator = new StringClassGenerator(numClasses);
 
 		@SuppressWarnings("unchecked")
@@ -22,13 +34,13 @@ public class SimpleUsageExample {
 
 		for (int i = 0; i < numValues; i++) {
 			StreamElement<String> value = generator.nextValue();
-			for (int index = 0; index < calculators.length; index++) {
-				calculators[index].process(value);
+			for (Calculator<String> calc : calculators) {
+				calc.process(value);
 			}
 		}
 
-		for (int index = 0; index < calculators.length; index++) {
-			System.out.println(calculators[index].getClass().getName() + ": " + calculators[index].getValue());
+		for (Calculator<String> calc : calculators) {
+			System.out.println(calc.getClass().getName() + ": " + calc.getValue());
 		}
 	}
 }
