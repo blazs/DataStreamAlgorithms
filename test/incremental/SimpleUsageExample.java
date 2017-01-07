@@ -14,7 +14,8 @@ import incremental.util.StringClassGenerator;
  * In general, the entropy of a uniform n-valued discrete random variable is
  * log_2 n, and the Gini index of this variable is 1-1/n.
  * 
- * @author blazs
+ * @author Jean Paul Barddal (jpbarddal@gmail.com).
+ * @author Blaz Sovdat (blaz.sovdat@gmail.com).
  *
  */
 public class SimpleUsageExample {
