@@ -2,7 +2,7 @@
 A Java package implementing algorithms for computing entropy and Gini index from time-changing data streams.
 
 ## What is this?
-Incremental machine learning algorithms, such as the [Hoeffding tree learner](homes.cs.washington.edu/~pedrod/papers/kdd00.pdf), work by processing learning examples one-by-one, updating the model as the examples arrive. Some of these algorithms compute various statistics to help them guide the search in the hypothesis space; two such popular statistics are [information gain](https://en.wikipedia.org/wiki/Information_gain_in_decision_trees), defined in terms of [information-theoretic entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)), and Gini index.
+Incremental machine learning algorithms, such as the [Hoeffding tree learner](http://homes.cs.washington.edu/~pedrod/papers/kdd00.pdf), work by processing learning examples one-by-one, updating the model as the examples arrive. Some of these algorithms compute various statistics to help them guide the search in the hypothesis space; two such popular statistics are [information gain](https://en.wikipedia.org/wiki/Information_gain_in_decision_trees), defined in terms of [information-theoretic entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)), and Gini index.
 
 Most of the aforementioned learning algorithms work by recomputing such statistics periodically (e.g. recompute statistics every 100 examples). This package implements algorithms that can maintain (information-theoretic) entropy and Gini index of a data stream by using computationally-cheap update formulas derived in [1].
 
