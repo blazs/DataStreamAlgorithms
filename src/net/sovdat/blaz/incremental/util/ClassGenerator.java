@@ -20,6 +20,10 @@ public abstract class ClassGenerator<T> {
 	 * @param numClasses Number of different class labels
 	 */
 	public ClassGenerator(int numClasses) {
+		if (numClasses < 1) {
+			throw new IllegalArgumentException("Expected number of classes to be at least 1");
+		}
+
 		this.numClasses = numClasses;
 		this.randomizer = new Random();
 	}
