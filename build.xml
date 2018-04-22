@@ -1,6 +1,5 @@
 <project>
-
-	<target name="clean">
+    <target name="clean">
         <delete dir="build"/>
     </target>
 
@@ -15,7 +14,7 @@
         </jar>
     </target>
 
-	<target name="junit" depends="jar">
+    <target name="junit" depends="jar">
         <junit printsummary="yes">
             <classpath>
                 <path refid="classpath"/>
@@ -31,5 +30,4 @@
     <target name="run">
         <java jar="build/jar/DataStreamAlgorithms.jar" fork="true"/>
     </target>
-
 </project>
