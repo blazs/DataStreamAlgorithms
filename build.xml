@@ -1,0 +1,35 @@
+<project>
+
+	<target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src/main/java" destdir="build/classes"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/DataStreamAlgorithms.jar" basedir="build/classes">
+        </jar>
+    </target>
+
+	<target name="junit" depends="jar">
+        <junit printsummary="yes">
+            <classpath>
+                <path refid="classpath"/>
+                <path refid="application"/>
+            </classpath>
+
+            <batchtest fork="yes">
+                <fileset dir="src/test/java" includes="**/Test*.java"/>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/DataStreamAlgorithms.jar" fork="true"/>
+    </target>
+
+</project>
