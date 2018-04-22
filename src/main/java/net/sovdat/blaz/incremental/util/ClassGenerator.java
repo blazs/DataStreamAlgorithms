@@ -27,7 +27,7 @@ public abstract class ClassGenerator<T> {
 		this.numClasses = numClasses;
 		this.randomizer = new Random();
 	}
-	
+
 	/**
 	 * Provides a new value amongst the <code>numClasses</code> 
 	 * different values with the same probability.
