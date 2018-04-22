@@ -24,8 +24,6 @@ for (StreamElement<String> element : elements) {
 
 At any point, `entropyCalculator.getValue()` returns the entropy of the distribution induced by the labels of the last 100 elements.
 
-See `test/incremental.SimpleUsageExample` for how to use the calculators.
-
 ## References
 [1] Blaz Sovdat. [Updating Formulas and Algorithms for Computing Entropy and Gini Index from Time-Changing Data Streams](https://arxiv.org/abs/1403.6348), arXiv:1403.6348.
 
