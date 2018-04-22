@@ -1,4 +1,6 @@
 <project>
+    <path id="library" location="${jar.dir}/${ant.project.name}.jar"/>
+
     <target name="clean">
         <delete dir="build"/>
     </target>
@@ -12,22 +14,5 @@
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/DataStreamAlgorithms.jar" basedir="build/classes">
         </jar>
-    </target>
-
-    <target name="junit" depends="jar">
-        <junit printsummary="yes">
-            <classpath>
-                <path refid="classpath"/>
-                <path refid="application"/>
-            </classpath>
-
-            <batchtest fork="yes">
-                <fileset dir="src/test/java" includes="**/Test*.java"/>
-            </batchtest>
-        </junit>
-    </target>
-
-    <target name="run">
-        <java jar="build/jar/DataStreamAlgorithms.jar" fork="true"/>
     </target>
 </project>
