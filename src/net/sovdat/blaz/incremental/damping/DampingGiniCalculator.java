@@ -1,9 +1,9 @@
-package incremental.damping;
+package net.sovdat.blaz.incremental.damping;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import incremental.StreamElement;
+import net.sovdat.blaz.incremental.StreamElement;
 
 /**
  * Class implementing damping version of algorithms for computing Gini index

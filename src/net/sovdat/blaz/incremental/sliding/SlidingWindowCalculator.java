@@ -1,6 +1,6 @@
-package incremental.sliding;
+package net.sovdat.blaz.incremental.sliding;
 
-import incremental.Calculator;
+import net.sovdat.blaz.incremental.Calculator;
 
 /**
  * Interface for classes that implement the sliding-window version of the

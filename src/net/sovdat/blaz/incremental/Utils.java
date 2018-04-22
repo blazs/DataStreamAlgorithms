@@ -1,4 +1,4 @@
-package incremental;
+package net.sovdat.blaz.incremental;
 
 public class Utils {
 	/**

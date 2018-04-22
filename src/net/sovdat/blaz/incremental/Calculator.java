@@ -1,4 +1,4 @@
-package incremental;
+package net.sovdat.blaz.incremental;
 
 /**
  * This interface defines a set of operations that we expect each type of class

@@ -1,8 +1,8 @@
-package incremental.util;
+package net.sovdat.blaz.incremental.util;
 
 import java.util.stream.IntStream;
 
-import incremental.StreamElement;
+import net.sovdat.blaz.incremental.StreamElement;
 
 /**
  * This class is used to generate numeric classes represented by integer

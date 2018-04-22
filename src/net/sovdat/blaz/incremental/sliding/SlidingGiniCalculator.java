@@ -1,11 +1,11 @@
-package incremental.sliding;
+package net.sovdat.blaz.incremental.sliding;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-import incremental.StreamElement;
+import net.sovdat.blaz.incremental.StreamElement;
 
 /**
  * Class implementing sliding version of the algorithm for computing Gini index

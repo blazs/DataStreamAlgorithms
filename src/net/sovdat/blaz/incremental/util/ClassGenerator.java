@@ -1,8 +1,8 @@
-package incremental.util;
+package net.sovdat.blaz.incremental.util;
 
 import java.util.Random;
 
-import incremental.StreamElement;
+import net.sovdat.blaz.incremental.StreamElement;
 
 /**
  * Abstract class that defines the behavior for stream generators.

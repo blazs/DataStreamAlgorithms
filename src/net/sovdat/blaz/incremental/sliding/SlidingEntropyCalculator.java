@@ -1,12 +1,12 @@
-package incremental.sliding;
+package net.sovdat.blaz.incremental.sliding;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
-import incremental.StreamElement;
-import incremental.Utils;
+import net.sovdat.blaz.incremental.StreamElement;
+import net.sovdat.blaz.incremental.Utils;
 
 /**
  * A class implementing damping version of the algorithm for computing entropy

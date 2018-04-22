@@ -1,6 +1,6 @@
-package incremental.damping;
+package net.sovdat.blaz.incremental.damping;
 
-import incremental.Calculator;
+import net.sovdat.blaz.incremental.Calculator;
 
 /**
  * Interface for classes that implement the damping version of the updating

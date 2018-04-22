@@ -1,9 +1,9 @@
-package incremental.util;
+package net.sovdat.blaz.incremental.util;
 
 import java.lang.Math;
 import java.util.stream.IntStream;
 
-import incremental.StreamElement;
+import net.sovdat.blaz.incremental.StreamElement;
 
 /**
  * This class is used to generate string classes, each of which with the same

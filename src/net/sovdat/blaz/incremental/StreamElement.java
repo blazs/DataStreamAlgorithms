@@ -1,4 +1,4 @@
-package incremental;
+package net.sovdat.blaz.incremental;
 
 /**
  * Class intended for storing elements of a data stream.

@@ -1,10 +1,10 @@
-package incremental.damping;
+package net.sovdat.blaz.incremental.damping;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import incremental.StreamElement;
-import incremental.Utils;
+import net.sovdat.blaz.incremental.StreamElement;
+import net.sovdat.blaz.incremental.Utils;
 
 /**
  * Implements the damping-factor version of the algorithm for computing entropy
