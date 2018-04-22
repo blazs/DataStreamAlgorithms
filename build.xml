@@ -1,6 +1,4 @@
 <project>
-    <path id="library" location="${jar.dir}/${ant.project.name}.jar"/>
-
     <target name="clean">
         <delete dir="build"/>
     </target>
